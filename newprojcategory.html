@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>New Project Category</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+        <style>
+            body {
+
+                background-image: url('./leather.jpg');
+                
+                background-position: top center;
+
+            }
+            .border{
+                border-radius: 25px;
+                background: #ffffff;/*linear-gradient(#ff8c66, #FFFFFF);*/
+                width:500px;
+                height:370px;
+                margin-top:50px;
+                margin-left: 150px;
+                border: 5px solid #000000;
+                /*background-color: #000000;*/
+                padding: 50px;
+            }
+            .custom-select {
+                background-color: rgba(153, 38, 0, 0.7);
+                color:#ffffff;
+            }
+            option{
+                background-color: rgba(153, 38, 0, 0.4);
+            }
+            .custom-select:visited{
+                background-color: rgba(153, 38, 0, 0.7);
+            }
+/*            option:hover{
+                background-color: rgba(255,255,255, 1);
+            }*/
+input[type=submit] {
+    background-color: #992600;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: none;
+}
+
+input[type=submit]:hover {
+    background-color: #cc3300;
+}
+        </style>
+    </head>
+    
+    <body style="margin-left: 300px;" class="container-fluid">
+        <div>
+        <!--<img src="CSIR-CLRI.png" alt="clri logo" align="center" >-->
+        <font face="Serif" size="40" color="white" style="text-align: center; float: none">  CSIR-Central Leather Research Institute  </font><br>
+        <br><font face="Serif"  style="text-align:center; color: white; font-size: 30px; float: none; margin-left: 50px;">  Project Planning and Business Development Department </font>
+        </div>
+        
+        <section> 
+        <form action="datapage.jsp" style="text-align:center" method="post" class="border">
+            <font face="serif" size="40" color="black" >New Project</font><br><br>
+            <select name="type" class="form-control custom-select">
+    <option value="0">Select project type:</option>
+    <option value="Grant-In-Aid">Grant-In-Aid</option>
+    <option value="Technical Services">Technical Services</option>
+    <option value="Collaborative">Collaborative</option>
+    <option value="Sponsored">Sponsored</option>
+    <option value="Consultancy">Consultancy</option>
+    <option value="Technology Transfer">Technology Transfer</option>
+  </select>
+            <br><br><br><br>
+            <input type="submit" value="Next">
+        </form>
+        </section>
+    </body>
+</html>
